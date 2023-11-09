@@ -48,7 +48,7 @@ minikube kubectl -- port-forward service/vault 8200:8200
 ```
 minikube kubectl -- logs vault
 ```
-
+![img3](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/4b892d341d30037325f8497fa6d62698b6a37888/Lab%201/vault_sign.png).
 ### Ответы на вопросы
 1. Что сейчас произошло и что сделали команды указанные ранее?
 Команда `kubectl run vault --image=hashicorp/vault --port=8200 -o yaml > mymanifest.yml` создала под с именем `MyPodName` в кластере Kubernetes.
