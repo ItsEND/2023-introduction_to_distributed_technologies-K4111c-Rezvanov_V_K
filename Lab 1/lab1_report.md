@@ -16,7 +16,9 @@ Date of finished:
 ```
 minikube start
 ```
-![img1](img/img1.png)  
+```
+kubectl run void --image=hashicorp/vault --port=8200  -o yaml > mymanifest.yml
+```
 Создание "пода" с использованием файла HashiCorpVault-pod
 ```
 kubectl create -f HashiCorpVault-pod.yml 
