@@ -88,19 +88,6 @@ minikube kubectl logs secondlab-deployment-5d94784d4-h7swg
 
 ```
 ![img3](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/7455a5296ab2af39acaf1038d636bc33c6c13425/Lab%202/Images/%D0%9B%D0%BE%D0%B3%D0%B8.png).
-### Ответы на вопросы
-1. Что сейчас произошло и что сделали команды указанные ранее?
-Команда `kubectl run vault --image=hashicorp/vault --port=8200 -o yaml > mymanifest.yml` создала под с именем `MyPodName` в кластере Kubernetes.
-Этот под использует образ `hashicorp/vault`. Команда также прокинула порт 8200 из контейнера в порт на узле. 
-Результат этой команды был записан в файл `mymanifest.yml` в формате YAML
-Затем, командf `minikube kubectl -- expose pod vault --type=NodePort --port=8200` для создания сервиса, который предоставляет доступ к подам в кластере.
-Этот сервис слушает на порту 8200 и перенаправляет все входящие соединения на этот порт в под "vault"
-Команда `minikube kubectl -- port-forward service/vault 8200:8200` для проброса порта 8200 с компьютера в контейнер. Это позволило обращаться к сервису Vault, используя URL http://localhost:8200.
-
-
-2. Где взять токен для входа в Vault?
-Токен для входа в Vault обычно генерируется при инициализации Vault. 
-Скорее всего, он будет в логах пода. Можно просмотреть логи пода, используя команду `kubectl logs vault`
 
 ### Схема
 ![schema](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/37f9511d7f89ca594585173879f313b4c7aef1ff/Lab%201/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80.drawio.png)
