@@ -6,7 +6,7 @@ Group: K4111c
 Author: Rezvanov Vladislav Konstantinovich
 Lab: Lab1
 Date of create: 30.10.2023
-Date of finished:
+Date of finished:16/11/2023
 
 ## Лабораторная работа №2 "Развертывание веб сервиса в Minikube, доступ к веб интерфейсу сервиса. Мониторинг сервиса."
 ### Цель работы
