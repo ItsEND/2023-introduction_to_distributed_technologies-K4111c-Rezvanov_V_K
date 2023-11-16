@@ -67,12 +67,18 @@ minikube kubectl get all
 
 minikube kubectl -- port-forward service/vault 8200:8200
 ```
-Запускаем и переходим на http://localhost:3000/
+Запускаем и переходим
 ```
 minikube kubectl -- port-forward service/secondlab-deployment 3000:3000
 ```
-![img2](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/23398d80260130f00c836e595c818771f036f5e7/Lab%201/vault_sign.png)
-После указанных действий хранилище доступно по адресу [http://localhost:8200](http://localhost:8200), однако для доступа нужно найти токе в логах:
+![img1](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/7455a5296ab2af39acaf1038d636bc33c6c13425/Lab%202/Images/%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA.png)
+
+Переходим на http://localhost:3000/
+
+![img2](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/7455a5296ab2af39acaf1038d636bc33c6c13425/Lab%202/Images/Second.png)
+
+Смотрим логи контейнеров
+
 ```
 minikube kubectl logs secondlab-deployment-5d94784d4-8pv75
 
@@ -81,7 +87,7 @@ minikube kubectl logs secondlab-deployment-5d94784d4-8pv75
 minikube kubectl logs secondlab-deployment-5d94784d4-h7swg 
 
 ```
-![img3](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/4b892d341d30037325f8497fa6d62698b6a37888/Lab%201/photo_2023-11-09_19-18-20.jpg).
+![img3](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/7455a5296ab2af39acaf1038d636bc33c6c13425/Lab%202/Images/%D0%9B%D0%BE%D0%B3%D0%B8.png).
 ### Ответы на вопросы
 1. Что сейчас произошло и что сделали команды указанные ранее?
 Команда `kubectl run vault --image=hashicorp/vault --port=8200 -o yaml > mymanifest.yml` создала под с именем `MyPodName` в кластере Kubernetes.
