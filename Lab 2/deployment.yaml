@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: secondlab-deployment
+  labels:
+    app: secondlab
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: secondlab
+  template:
+    metadata:
+      labels:
+        app: secondlab
+    spec:
+      containers:
+      - name: secondlab
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        env:
+        - name: REACT_APP_USERNAME
+          value: "Rezvanov"
+        - name: REACT_APP_COMPANY_NAME
+          value: "ITMO_Univer"
+        ports:
+        - containerPort: 3000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
