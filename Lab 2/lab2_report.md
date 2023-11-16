@@ -67,7 +67,7 @@ minikube kubectl get all
 
 minikube kubectl -- port-forward service/vault 8200:8200
 ```
-Запускаем и переходим
+Запускаем
 ```
 minikube kubectl -- port-forward service/secondlab-deployment 3000:3000
 ```
