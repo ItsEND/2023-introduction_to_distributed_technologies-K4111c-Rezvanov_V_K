@@ -90,4 +90,4 @@ minikube kubectl logs secondlab-deployment-5d94784d4-h7swg
 ![img3](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/7455a5296ab2af39acaf1038d636bc33c6c13425/Lab%202/Images/%D0%9B%D0%BE%D0%B3%D0%B8.png).
 
 ### Схема
-![schema](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/37f9511d7f89ca594585173879f313b4c7aef1ff/Lab%201/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80.drawio.png)
+![schema](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/76d5cc72d90c1d7f4beae55da69aa4757bd7b9f1/Lab%202/Images/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0%202.drawio.png)
