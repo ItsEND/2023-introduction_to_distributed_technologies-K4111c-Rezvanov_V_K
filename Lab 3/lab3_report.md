@@ -100,7 +100,7 @@ spec:
                 port:
                   number: 3000
 ```
-#Генерируем TLS сертификат
+# Генерируем TLS сертификат
 
 ```
 openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out cert.crt -keyout cert.key
@@ -118,7 +118,7 @@ kubectl create secret tls rezvanov-lab3-tls --key="cert.key" --cert="cert.crt"
 kubectl apply -f manifest.yaml
 
 ```
-##Связываем доменное имя и IP
+## Связываем доменное имя и IP
 
 ```
 echo "127.0.0.1 rezvanov-lab3.app" | sudo tee -a /etc/hosts
@@ -136,6 +136,6 @@ minikube tunnel
 ![img4](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/d953ec0cfa93a94c2b39e3c93c750dbf4014017a/Lab%203/Images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-11-26%2019-57-37.png)
 
 
-###Схема
+### Схема
 ![SCH1](https://github.com/ItsEND/2023-introduction_to_distributed_technologies-K4111c-Rezvanov_V_K/blob/6f07619f57948e3be0c409e4fc802184eabd7ec6/Lab%203/Images/%D0%9A%D1%83%D0%B1.drawio.png) 
 
